@@ -5,13 +5,13 @@ const mongoose = require('mongoose');
 
 const postsRoutes = require('./routes/posts');
 
-// mongodb password: ZTe41YrLvR0mXhsg
+// mongodb password: <YOUR-PASSWORD>
 // connection string:
-//        mongodb+srv://mawan:ZTe41YrLvR0mXhsg@cluster0-rnnrq.mongodb.net/node-angular?retryWrites=true&w=majority
+//        mongodb+srv://mawan:<YOUR-PASSWORD>@cluster0-rnnrq.mongodb.net/node-angular?retryWrites=true&w=majority
 
 const app = express();
 
-mongoose.connect("mongodb+srv://mawan:ZTe41YrLvR0mXhsg@cluster0-rnnrq.mongodb.net/node-angular?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://mawan:<YOUR-PASSWORD>@cluster0-rnnrq.mongodb.net/node-angular?retryWrites=true&w=majority")
   .then(() => {
     console.log('Connected to database!')
   })
